@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.2-web/fontawesome-free-5.15.2-web/css/all.min.css">
+</head>
+
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid">
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--separate">
+                            <a href="http://127.0.0.1:5500/index.html" class="header__navbar-trangchu">Trang chủ</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <span class="header__navbar-title--no-pointer">Kết nối</span>
+                            <a href="https://www.facebook.com/" target="blank" class="header__navbar-icon-link"><i class="header__navbar-icon fab fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/" class="header__navbar-icon-link"><i class="header__navbar-icon fab fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--has-notify">
+                            <i class="header__navbar-icon far fa-bell"></i> Thông báo
+                            <div class="header__notify">
+                                <header class="header__notify-header">
+                                    <h3>Thông báo mới nhận</h3>
+                                </header>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://traicaymiennam.vn/wp-content/uploads/Luoi-dua-luoi-390x250.png" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Ai Nên Ăn Dưa Lưới Nhật Bản Fuji Melon</span>
+                                                <span class="header__notify-descriotion">Khám phá dưa lưới Nhật Bản</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://traicaymiennam.vn/wp-content/uploads/L%E1%BB%B1u-Ai-C%E1%BA%ADp-v%C3%A0-Nam-Phi-1-390x250.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Trái lựu và công dụng của quả lựu</span>
+                                                <span class="header__notify-descriotion">Khám phá tác dụng kỳ diệu của trái lựu đỏ</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://traicaymiennam.vn/wp-content/uploads/10470609_418911394935603_4271769005418759972_n-390x250.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Phân biệt xoài cát hòa lộc và xoài cát chu</span>
+                                                <span class="header__notify-descriotion"></span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://traicaymiennam.vn/wp-content/uploads/T%C3%A1o-Ambrosia-M%E1%BB%B9-1-390x250.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Gan Nhiễm Mỡ Nên Ăn Nhiều Hoa Quả rau sạch</span>
+                                                <span class="header__notify-descriotion"></span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://traicaymiennam.vn/wp-content/uploads/1241613meo_lam_dep_voi_cam0-390x250.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Cam vàng Navel Mỹ</span>
+                                                <span class="header__notify-descriotion">Đặc điểm</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://traicaymiennam.vn/wp-content/uploads/Untitled-5-390x250.png" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Văn hóa dưa lưới của người nhật và truyền thuyết chim hạc</span>
+                                                <span class="header__notify-descriotion"></span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="header__notify-footer">
+                                    <a href="" class="header__notify-footer-btn">Xem tất cả</a>
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="./chitiet4.html" class="header__navbar-item-link">
+                                <i class="header__navbar-icon far fa-question-circle"></i> Trợ giúp
+                            </a>
+                        </li>
+                        <a href="./chitiet5.html" class="header__navbar-item--separate">
+                            <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">Đăng ký</li>
+                        </a>
+                        <a href="" class="header__navbar-item--strong-link">
+                            <li class="header__navbar-item header__navbar-item--strong">Đăng nhập</li>
+                        </a>
+                        <!--<li class="header__navbar-item header__navbar-user">
+                            <img src="https://yt3.ggpht.com/yti/ANoDKi6m7oH-Eac8DJI-cveVZFyEdNuDGdOyB--N7nLwYw=s88-c-k-c0x00ffffff-no-rj-mo" alt="" class="header__navbar-user-img">
+                            <span class="header__navbar-user-name">Nguyễn Công Minh</span>
+                            <ul class="header__navbar-user-menu">
+                                <li class="header__navbar-user-item">
+                                    <a href="">Tài khoản của tôi</a>
+                                    <a href="">Địa chỉ của tôi </a>
+                                    <a href="">Đơn mua</a>
+                                    <a href="">Đăng xuất</a>
+                                </li>
+                            </ul>
+                        </li>-->
+                    </ul>
+                </nav>
+                <div class="header-with-search">
+                    <div class="header__logo">
+                        <a href="/" class="header__logo-link">
+                            <img class="header__logo-img" src="logo.png">
+                        </a>
+                    </div>
+                    <div class="header__search">
+                        <div class="header__search-input-wrap">
+                            <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm sản phẩm">
+                            <div class="header__search-history">
+                                <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                                <ul class="header__search-history-list">
+                                    <li class="header__search-history-item">
+                                        <a href="" class="">Trái cây trái mùa</a>
+                                        <a href="" class="">Táo mỹ</a>
+                                        <a href="" class="">Chanh</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header__seach-select">
+                            <span class="header__seach-select-label">Chi nhánh</span>
+                            <i class="header__seach-select-icon fas fa-chevron-down"></i>
+                            <ul class="header__search-option">
+                                <li class="header__search-option-item header__search-option-item--active">
+                                    <span>Hà Nội</span>
+                                    <i class="fas fa-check"></i>
+                                </li>
+                                <li class="header__search-option-item">
+                                    <span>Hồ Chí Minh</span>
+                                    <i class="fas fa-check"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="header__search-btn">
+                            <i class="header__search-btn-icon fas fa-search"></i>
+                        </button>
+                    </div>
+                    <div class="header__cart">
+                        <div class="header__cart-wrap">
+                            <i class="header__cart-icon fas fa-shopping-cart"></i>
+                            <span class="header__cart-notice">0</span>
+                            <!--No cart: header__cart-list--no-cart -->
+                            <div class="header__cart-list">
+                                <img src="./assets/img/no-cart - Sao chép.png" alt="" class="header__cart-no-cart-img">
+                                <span class="header__cart-list-no-cart-msg">
+                                   Chưa có sản phẩm
+                               </span>
+                                <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
+                                <ul class="header__cart-list-item">
+                                    <li class="header__cart-item">
+                                        <img src="https://nongsandungha.com/wp-content/uploads/2019/09/xoai-tuong3.jpg" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Xoài tượng Bình Định</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">35.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">Số lượng: 1kg</span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="https://nongsandungha.com/img/product/-yZkaVrBtnDQ6f9vvWm8N5JX2A3tyAiUdua-sap-tra-vinh-nsdh.jpg" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Dừa sáp Trà Vinh</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">300.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">Số lượng: 1quả</span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="https://nongsandungha.com/wp-content/uploads/cc.jpg" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Cóc bao tử</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">25.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">Số lượng: 1kg</span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <a class="header__cart-view-cart btn.btn--primary">Xem giỏ hàng</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="app__container">
+            <div class="grid">
+                <div class="grid__row app__content">
+                    <div class="grid__column-2">
+                        <nav class="category">
+                            <h3 class="category__heading">DANH MỤC</h3>
+                            <ul class="category-list">
+                                <li class="category-item category-item--active">
+                                    <a href="#" class="categoty-item__link">Hàng nội địa</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="categoty-item__link">Rau củ tươi Đà Lạt</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="categoty-item__link">Đặc sản Tây Bắc</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="categoty-item__link">Nông sản sấy khô</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="categoty-item__link">Đặc sản Cao Lãnh</a>
+                                </li>
+                                <li class="category-item ">
+                                    <a href="#" class="categoty-item__link">Gạo 3 miền</a>
+                                </li>
+                                <li class="category-item ">
+                                    <a href="#" class="categoty-item__link">Nông sản rừng</a>
+                                </li>
+                                <li class="category-item ">
+                                    <a href="#" class="categoty-item__link">Hạt, ngũ cốc dinh dưỡng</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <nav class="tags">
+                            <h3 class="tags-name">TAGS</h3>
+                            <a href="" class="tags-name-items">Mật ong rừng Tây Bắc</a>
+                            <a href="" class="tags-name-items">Dầu dừa nguyên chất</a>
+                            <a href="" class="tags-name-items">Hạt ca cao nguyên chất</a>
+                            <a href="" class="tags-name-items">Dừa Bến Tre</a>
+                            <a href="" class="tags-name-items">Tác dụng của ngồng tỏi</a>
+                            <a href="" class="tags-name-items">Giống lúa</a>
+                            <a href="" class="tags-name-items">Rau tầm bóp </a>
+                            <a href="" class="tags-name-items">Hạt giống cải các loại</a>
+                        </nav>
+                    </div>
+                    <div class="grid__column-10">
+                        <div class="home-filter">
+                            <a href="" class="btn">Sản phẩm</a>
+                            <a href="./chitiet1.html" class="btn">Quà biếu quà tết</a>
+                            <a href="./chitiet2.html" class="btn">An toàn thực phẩm</a>
+                            <a href="./chitiet3.html" class="btn">Tin hot</a>
+
+                            <a href="" class="btn">Thanh toán</a>
+                        </div>
+                        iv class="home-product">
+                        <div class="grid__row">
+                            <div class="grid__column-2-4 ">
+                                <a href="./chitiet.html" class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://sieuthiandam.vn/wp-content/uploads/2018/09/pepper.jpg);"></div>
+                                    <h4 class="home-product-item__name">Ớt chuông</h4>
+                                    <span class="home-product-item__price">190.000đ</span>
+                                    <div class="home-product-item__action">
+                                        <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                        <div class="home-product-item__rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="home-product-item__origin">
+                                        <span class="home-product-item__origin-name">Việt Nam</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__column-2-4 ">
+                                <a href="#" class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(http://product.hstatic.net/1000335596/product/_1100737__091db70a144d4b30b3505d158353609d_grande.jpg);"></div>
+                                    <h4 class="home-product-item__name">Sầu riêng</h4>
+                                    <span class="home-product-item__price">60.000đ</span>
+                                    <div class="home-product-item__action">
+                                        <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                        <div class="home-product-item__rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="home-product-item__origin">
+                                        <span class="home-product-item__origin-name">Việt Nam</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__column-2-4 ">
+                                <a href="#" class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://musangkingf99.com/wp-content/uploads/2020/02/le-han-quoc.png);"></div>
+                                    <h4 class="home-product-item__name">Bưởi da xanh </h4>
+                                    <span class="home-product-item__price">35.000đ</span>
+                                    <div class="home-product-item__action">
+                                        <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                        <div class="home-product-item__rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="home-product-item__origin">
+                                        <span class="home-product-item__origin-name">Bến tre</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__column-2-4 ">
+                                <a href="#" class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://hatgiongphuongnam.com/asset/upload/image/hat-giong-dau-tay-do-1.5_.jpg);"></div>
+                                    <h4 class="home-product-item__name">Dâu tây Đà Lạt-Dâu tây Mộc Châu</h4>
+                                    <span class="home-product-item__price">240.000đ</span>
+                                    <div class="home-product-item__action">
+                                        <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                        <div class="home-product-item__rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="home-product-item__origin">
+                                        <span class="home-product-item__origin-name">Việt Nam</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__column-2-4 ">
+                                <a href="#" class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://bizweb.dktcdn.net/100/010/432/products/green-grape.jpg?v=1530625676553);"></div>
+                                    <h4 class="home-product-item__name">Nho xanh không hạt</h4>
+                                    <span class="home-product-item__price">190.000đ</span>
+                                    <div class="home-product-item__action">
+                                        <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                        <div class="home-product-item__rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="home-product-item__origin">
+                                        <span class="home-product-item__origin-name">Việt Nam</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__column-2-4 ">
+                                <a href="#" class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://namxanh.vn/wp-content/uploads/2020/03/nam-so-trang-2.jpg);"></div>
+                                    <h4 class="home-product-item__name">Nấm sò</h4>
+                                    <span class="home-product-item__price">1.000.000đ</span>
+                                    <div class="home-product-item__action">
+                                        <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                        <div class="home-product-item__rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="home-product-item__origin">
+                                        <span class="home-product-item__origin-name">Việt Nam</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__column-2-4 ">
+                                <a href="#" class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://www.farmstore.vn/uploads/2019/03/trai-cay-say-3750.jpg);"></div>
+                                    <h4 class="home-product-item__name">Hoa quả sấy khô các loại</h4>
+                                    <span class="home-product-item__price">500.000đ</span>
+                                    <div class="home-product-item__action">
+                                        <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                        <div class="home-product-item__rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="home-product-item__origin">
+                                        <span class="home-product-item__origin-name">Việt Nam</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__column-2-4 ">
+                                <a href="#" class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://fresh.com.vn/wp-content/uploads/2018/01/Cacao-Powder-Beans-Bowl_opt.jpg);"></div>
+                                    <h4 class="home-product-item__name">Bột ca cao nguyên chất</h4>
+                                    <span class="home-product-item__price">500.000đ</span>
+                                    <div class="home-product-item__action">
+                                        <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                        <div class="home-product-item__rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="home-product-item__origin">
+                                        <span class="home-product-item__origin-name">Cao Bằng</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__column-2-4 ">
+                                <a href="#" class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://fresh.mivi.vn/uploads/sites/2/2020/08/chom-chom-nhan.png);"></div>
+                                    <h4 class="home-product-item__name">Chôm chôm Đà Lạt</h4>
+                                    <span class="home-product-item__price">48.000đ</span>
+                                    <div class="home-product-item__action">
+                                        <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                        <div class="home-product-item__rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="home-product-item__origin">
+                                        <span class="home-product-item__origin-name">Việt Nam</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__column-2-4 ">
+                                <a href="#" class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://salt.tikicdn.com/cache/w444/ts/product/c3/26/a0/d4193ea7a706da19d62856f7ff8d6e47.jpg);"></div>
+                                    <h4 class="home-product-item__name">Măng cụtTươi</h4>
+                                    <span class="home-product-item__price">175.000đ</span>
+                                    <div class="home-product-item__action">
+                                        <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                        <div class="home-product-item__rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="home-product-item__origin">
+                                        <span class="home-product-item__origin-name">Việt Nam</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__column-2-4 ">
+                                <a href="#" class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://media.loveitopcdn.com/1738/hat-arabica.png);"></div>
+                                    <h4 class="home-product-item__name">Hạt cà phê nguyên chất</h4>
+                                    <span class="home-product-item__price">500.000đ</span>
+                                    <div class="home-product-item__action">
+                                        <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                        <div class="home-product-item__rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="home-product-item__origin">
+                                        <span class="home-product-item__origin-name">Hàn Quốc</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__column-2-4 ">
+                                <a href="#" class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://traicayvuongtron.vn/resources/uploads/toplist3/sauriengri6/sauriengri62.jpg);"></div>
+                                    <h4 class="home-product-item__name">Sầu riêng Ri6</h4>
+                                    <span class="home-product-item__price">115.000đ</span>
+                                    <div class="home-product-item__action">
+                                        <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                        <div class="home-product-item__rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="home-product-item__origin">
+                                        <span class="home-product-item__origin-name">Nước ngoài</span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="grid__column-2-4 ">
+                                <a href="#" class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/bbde082aad881fc2dc5e4356ad35089a);"></div>
+                                    <h4 class="home-product-item__name">Chery nhập khẩu</h4>
+                                    <span class="home-product-item__price">500.000đ</span>
+                                    <div class="home-product-item__action">
+                                        <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                        <div class="home-product-item__rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="home-product-item__origin">
+                                        <span class="home-product-item__origin-name">Thái Lan</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__column-2-4 ">
+                                <a href="#" class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://vaithieu.net/wp-content/uploads/2017/11/vai-thieu-tuoi-luc-ngan.jpg);"></div>
+                                    <h4 class="home-product-item__name">Vải thiều Lục Ngạn-Đặc sản Bắc Giang</h4>
+                                    <span class="home-product-item__price">50.000đ</span>
+                                    <div class="home-product-item__action">
+                                        <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                        <div class="home-product-item__rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="home-product-item__origin">
+                                        <span class="home-product-item__origin-name">Bắc Giang</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__column-2-4 ">
+                                <a href="#" class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000191320/product/7eb870a7a4407d96effa815ce8fa4a75_master.jpg);"></div>
+                                    <h4 class="home-product-item__name">Dưa hấu</h4>
+                                    <span class="home-product-item__price">18.000đ</span>
+                                    <div class="home-product-item__action">
+                                        <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                        <div class="home-product-item__rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="home-product-item__origin">
+                                        <span class="home-product-item__origin-name">Việt Nam</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        </d<div>
+                        <ul class="pagination home-product__pagination">
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">
+                                    <i class="pagination-item-icon fas fa-angle-left"></i>
+                                </a>
+                            </li>
+                            <li class="pagination-item pagination-item--active">
+                                <a href="" class="pagination-item__link">1</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">2</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">3</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">...</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">
+                                    <i class="pagination-item-icon fas fa-angle-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Hạt giống bán chạy </h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">Mướp hương </a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">Bí đao </a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">Rau thìa là </a>
+                                </li>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Danh mục sản phẩm</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Rau củ sạch Đà Lạt </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Đặc sản vùng miền </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Đồ ướt </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Rau sạch  </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Danh mục tin tức </h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">An toàn thực phẩm</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Đặc sản Tây Bắc </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Món ăn </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Làm đẹp </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Sức khỏe </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Chính sách giao hàng </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Chính sách đổi trả  </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Chính sách bảo mật </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Chính sách chung </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Liên kết mạng xã hội </h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="footer-item__icon fab fa-facebook-square"></i> Facebook: Nguyễn Công Minh
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="footer-item__icon fab fa-facebook-square"></i> Facebook: Phùng Văn Phương
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Sản phẩm ưu chuộng</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Măng tây xanh </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Táo mèo khô </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Hà thủ ô đỏ </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Mật ong bạc hà </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Dâu tây Đà Lạt </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="grip">
+                    <p class="footer__text">2021 - Hoa quả sạch SouthFruit </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="modal">
+        <div class="modal__overlay">
+
+        </div>
+        <div class="modal__body">
+            <div class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng nhập</h3>
+                        <a href="./chitiet5.html" class="auth-form__switch-btn-link">
+                            <span class="auth-form__switch-btn">Đăng ký</span>
+                        </a>
+                    </div>
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Nhập email hoặc số điện thoại">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Nhập mật khẩu">
+                        </div>
+                    </div>
+                    <div class="auth-form__aside">
+                        <div class="auth-form__help">
+                            <a href="" class="auth-form__help-link auth-form__help-forgot">Quên mật khẩu</a>
+                            <span class="auth-form__help-separate"></span>
+                            <a href="./chitiet4.html" class="auth-form__help-link">Cần trợ giúp?</a>
+                        </div>
+                    </div>
+                    <div class="auth-form__controls">
+                        <a href="./index.html" class="auth-form__controls-back-link">
+                            <button class="btn btn--normal auth-form__controls-back">TRỞ LẠI</button>
+                        </a>
+                        <button class="btn btn--primary ">ĐĂNG NHẬP</button>
+                    </div>
+                </div>
+                <div class="auth-form__socials">
+                    <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icons">
+                        <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+                        <span class="auth-form__socials-title">Kết nối với Facebook</span>
+                    </a>
+                    <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icons">
+                        <i class="auth-form__socials-icon fab fa-google"></i>
+                        <span class="auth-form__socials-title">Kết nối với Google</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin sản phẩm</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.2-web/fontawesome-free-5.15.2-web/css/all.min.css">
+</head>
+<div class="app">
+    <header class="header">
+        <div class="grid">
+            <nav class="header__navbar">
+                <ul class="header__navbar-list">
+                    <li class="header__navbar-item header__navbar-item--separate">
+                        <a href="http://127.0.0.1:5500/index.html" class="header__navbar-trangchu">Trang chủ</a>
+                    </li>
+                    <li class="header__navbar-item">
+                        <span class="header__navbar-title--no-pointer">Kết nối</span>
+                        <a href="https://www.facebook.com/" target="blank" class="header__navbar-icon-link"><i class="header__navbar-icon fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/" class="header__navbar-icon-link"><i class="header__navbar-icon fab fa-instagram"></i></a>
+                    </li>
+                </ul>
+                <ul class="header__navbar-list">
+                    <li class="header__navbar-item header__navbar-item--has-notify">
+                        <i class="header__navbar-icon far fa-bell"></i> Thông báo
+                        <div class="header__notify">
+                            <header class="header__notify-header">
+                                <h3>Thông báo mới nhận</h3>
+                            </header>
+                            <ul class="header__notify-list">
+                                <li class="header__notify-item header__notify-item--viewed">
+                                    <a href="" class="header__notify-link">
+                                        <img src="https://traicaymiennam.vn/wp-content/uploads/Luoi-dua-luoi-390x250.png" alt="" class="header__notify-img">
+                                        <div class="header__notify-info">
+                                            <span class="header__notify-name">Ai Nên Ăn Dưa Lưới Nhật Bản Fuji Melon</span>
+                                            <span class="header__notify-descriotion">Khám phá dưa lưới Nhật Bản</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="header__notify-item header__notify-item--viewed">
+                                    <a href="" class="header__notify-link">
+                                        <img src="https://traicaymiennam.vn/wp-content/uploads/L%E1%BB%B1u-Ai-C%E1%BA%ADp-v%C3%A0-Nam-Phi-1-390x250.jpg" alt="" class="header__notify-img">
+                                        <div class="header__notify-info">
+                                            <span class="header__notify-name">Trái lựu và công dụng của quả lựu</span>
+                                            <span class="header__notify-descriotion">Khám phá tác dụng kỳ diệu của trái lựu đỏ</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="header__notify-item header__notify-item--viewed">
+                                    <a href="" class="header__notify-link">
+                                        <img src="https://traicaymiennam.vn/wp-content/uploads/10470609_418911394935603_4271769005418759972_n-390x250.jpg" alt="" class="header__notify-img">
+                                        <div class="header__notify-info">
+                                            <span class="header__notify-name">Phân biệt xoài cát hòa lộc và xoài cát chu</span>
+                                            <span class="header__notify-descriotion"></span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="header__notify-item header__notify-item--viewed">
+                                    <a href="" class="header__notify-link">
+                                        <img src="https://traicaymiennam.vn/wp-content/uploads/T%C3%A1o-Ambrosia-M%E1%BB%B9-1-390x250.jpg" alt="" class="header__notify-img">
+                                        <div class="header__notify-info">
+                                            <span class="header__notify-name">Gan Nhiễm Mỡ Nên Ăn Nhiều Hoa Quả rau sạch</span>
+                                            <span class="header__notify-descriotion"></span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="header__notify-item header__notify-item--viewed">
+                                    <a href="" class="header__notify-link">
+                                        <img src="https://traicaymiennam.vn/wp-content/uploads/1241613meo_lam_dep_voi_cam0-390x250.jpg" alt="" class="header__notify-img">
+                                        <div class="header__notify-info">
+                                            <span class="header__notify-name">Cam vàng Navel Mỹ</span>
+                                            <span class="header__notify-descriotion">Đặc điểm</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="header__notify-item header__notify-item--viewed">
+                                    <a href="" class="header__notify-link">
+                                        <img src="https://traicaymiennam.vn/wp-content/uploads/Untitled-5-390x250.png" alt="" class="header__notify-img">
+                                        <div class="header__notify-info">
+                                            <span class="header__notify-name">Văn hóa dưa lưới của người nhật và truyền thuyết chim hạc</span>
+                                            <span class="header__notify-descriotion"></span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <footer class="header__notify-footer">
+                                <a href="" class="header__notify-footer-btn">Xem tất cả</a>
+                            </footer>
+                        </div>
+                    </li>
+                    <li class="header__navbar-item">
+                        <a href="" class="header__navbar-item-link">
+                            <i class="header__navbar-icon far fa-question-circle"></i> Trợ giúp
+                        </a>
+                    </li>
+                    <!--<li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">Đăng ký</li>
+                    <li class="header__navbar-item header__navbar-item--strong">Đăng nhập</li>-->
+                    <li class="header__navbar-item header__navbar-user">
+                        <img src="https://yt3.ggpht.com/yti/ANoDKi6m7oH-Eac8DJI-cveVZFyEdNuDGdOyB--N7nLwYw=s88-c-k-c0x00ffffff-no-rj-mo" alt="" class="header__navbar-user-img">
+                        <span class="header__navbar-user-name">Nguyễn Công Minh</span>
+                        <ul class="header__navbar-user-menu">
+                            <li class="header__navbar-user-item">
+                                <a href="">Tài khoản của tôi</a>
+                                <a href="">Địa chỉ của tôi </a>
+                                <a href="">Đơn mua</a>
+                                <a href="">Đăng xuất</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-with-search">
+                <div class="header__logo">
+                    <a href="/" class="header__logo-link">
+                        <img class="header__logo-img" src="logo.png">
+                    </a>
+                </div>
+                <div class="header__search">
+                    <div class="header__search-input-wrap">
+                        <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm sản phẩm">
+                        <div class="header__search-history">
+                            <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                            <ul class="header__search-history-list">
+                                <li class="header__search-history-item">
+                                    <a href="" class="">Trái cây trái mùa</a>
+                                    <a href="" class="">Táo mỹ</a>
+                                    <a href="" class="">Chanh</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header__seach-select">
+                        <span class="header__seach-select-label">Chi nhánh</span>
+                        <i class="header__seach-select-icon fas fa-chevron-down"></i>
+                        <ul class="header__search-option">
+                            <li class="header__search-option-item header__search-option-item--active">
+                                <span>Hà Nội</span>
+                                <i class="fas fa-check"></i>
+                            </li>
+                            <li class="header__search-option-item">
+                                <span>Hồ Chí Minh</span>
+                                <i class="fas fa-check"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="header__search-btn">
+                        <i class="header__search-btn-icon fas fa-search"></i>
+                    </button>
+                </div>
+                <div class="header__cart">
+                    <div class="header__cart-wrap">
+                        <i class="header__cart-icon fas fa-shopping-cart"></i>
+                        <span class="header__cart-notice">2</span>
+                        <!--No cart: header__cart-list--no-cart -->
+                        <div class="header__cart-list">
+                            <img src="./assets/img/no-cart - Sao chép.png" alt="" class="header__cart-no-cart-img">
+                            <span class="header__cart-list-no-cart-msg">
+                               Chưa có sản phẩm
+                           </span>
+                            <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
+                            <ul class="header__cart-list-item">
+                                <li class="header__cart-item">
+                                    <img src="https://daotaovuabep.com/wp-content/uploads/2020/05/gao_den.jpg" alt="" class="header__cart-img">
+                                    <div class="header__cart-item-info">
+                                        <div class="header__cart-item-head">
+                                            <h5 class="header__cart-item-name">Gạo lứt đen</h5>
+                                            <div class="header__cart-item-price-wrap">
+                                                <span class="header__cart-item-price">50.000đ</span>
+                                                <span class="header__cart-item-multiply">x</span>
+                                                <span class="header__cart-item-qnt">4</span>
+                                            </div>
+                                        </div>
+                                        <div class="header__cart-item-body">
+                                            <span class="header__cart-item-description">Số lượng: 1kg</span>
+                                            <span class="header__cart-item-remove">Xóa</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="header__cart-item">
+                                    <img src="https://vcdn-suckhoe.vnecdn.net/2019/11/05/RONG-BIEN-HAN-QUOC-1-8040-1572941370.jpg" alt="" class="header__cart-img">
+                                    <div class="header__cart-item-info">
+                                        <div class="header__cart-item-head">
+                                            <h5 class="header__cart-item-name">Rong biển</h5>
+                                            <div class="header__cart-item-price-wrap">
+                                                <span class="header__cart-item-price">300.000đ</span>
+                                                <span class="header__cart-item-multiply">x</span>
+                                                <span class="header__cart-item-qnt">2</span>
+                                            </div>
+                                        </div>
+                                        <div class="header__cart-item-body">
+                                            <span class="header__cart-item-description">Số lượng: 1gói</span>
+                                            <span class="header__cart-item-remove">Xóa</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <a class="header__cart-view-cart btn.btn--primary">Xem giỏ hàng</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="app__container">
+        <div class="grid">
+            <div class="grid__row app__content ">
+                <div class="trangchitiet1_b">
+                    <div class="chitiet_trangchitiet1_a">
+                        <div class="trangchitiet1_a">
+                            <img class="ot__img" src="https://sieuthiandam.vn/wp-content/uploads/2018/09/pepper.jpg" alt=""></img>
+                        </div>
+                        <ul class="ot">
+                            <li class="ot__ot1">
+                                <a href="http://127.0.0.1:5500/" class="ot__trangchu">Trang chủ</a>
+                            </li>
+                            <li class="ot1__ot1-ten">
+                                Ớt chuông
+                            </li>
+                            <li class="ot2-ot1">Phân loại: Trái cây tươi</li>
+                            <li class="ot2-ot1">Giá: 190.000đ</li>
+                            <li class="ot2-ot1">Số lượng: 1kg</li>
+                            <li class="ot2-ot1">Thành tiền: 0đ</li>
+                            <li class="ot3-ot1">
+                                <button class="ot3-ot1-ot1 ot3-ot1-ot1-1">Mua lẻ</button>
+                                <button class="ot3-ot1-ot1 ot3-ot1-ot1-2">Mua sỉ</button>
+                                <button class="ot3-ot1-ot1 ot3-ot1-ot1-3">Đăng ký NCC</button>
+                            </li>
+                            <li class="ot_danhmuc">
+                                Danh mục: Rau củ sach, thực phẩm sạch
+                            </li>
+                        </ul>
+                    </div>
+                    <h4 class="trangchitiet_b-ot">
+                        -----------------Thông tin sản phẩm--------------------
+                    </h4>
+                    <nav class="thongtinsanpham">
+                        <ul class="ot1">
+                            <li class="ot1_ot1 ">Thành phần</li>
+                            <li class="ot1_ot1 ">Hướng dẫn sử dụng</li>
+                            <li class="ot1_ot1 ">Cách bảo quản</li>
+                            <li class="ot1_ot1">Lưu ý</li>
+                            <li class="ot1_ot1">HSD</li>
+                            <li class="ot1_ot1 ">Giao hàng</li>
+                            <li class="ot1_ot1">Xuất sứ </li>
+                        </ul>
+                        <ul class="ot2">
+                            <li class="ot2-ot2">100% ớt tươi, chât lượng cao, không chất bảo quản</li>
+                            <li class="ot2-ot2">Sử dụng ớt sừng trong chế biến món ăn như: các món xào, hấp, sử dụng trực tiếp</li>
+                            <li class="ot2-ot2">Cho ớt vào túi nilon và bảo quản trong tủ lạnh</li>
+                            <li class="ot2-ot2">Không bán lẻ đồ tươi các tỉnh</li>
+                            <li class="ot2-ot2">Xem trên bao bì</li>
+                            <li class="ot2-ot2">Hỗ trợ giao hàng toàn quốc</li>
+                            <li class="ot2-ot2">Việt Nam</li>
+                        </ul>
+                    </nav>
+                    <h4 class="trangchitiet_b-ot">
+                        --------------------Hình ảnh sản phẩm--------------------
+                    </h4>
+                    <img src="https://cdn.tgdd.vn/Files/2020/04/30/1252836/7-cong-dung-cua-ot-chuong-doi-voi-suc-khoe-va-mot-.jpg" alt="" class="trangchitiet1_b-img">
+                    <img src="https://agricity.vn/wp-content/uploads/2020/04/halves-sliced-orange-green-red-bell-peppers-top-view_89816-6436.jpg" alt="" class="trangchitiet1_b-img">
+                    <div class="trangchitiet-end">
+                        <h4 class="trangchitiet_b-ot">
+                            --------------------Sản phẩm liên quan--------------------
+                        </h4>
+                        <div class="grip__column-2-4-trangchitiet1 grid__column-2-4 ">
+                            <a href="#" class="home-product-item home-product-item-trangchitiet1">
+                                <div class="home-product-item__img" style="background-image: url(https://vcdn-suckhoe.vnecdn.net/2019/11/05/RONG-BIEN-HAN-QUOC-1-8040-1572941370.jpg);"></div>
+                                <h4 class="home-product-item__name">Rong biển</h4>
+                            </a>
+                            <a href="#" class="home-product-item home-product-item-trangchitiet1">
+                                <div class="home-product-item__img" style="background-image: url(https://vcdn-suckhoe.vnecdn.net/2018/11/26/toi-den-1254-1543224081.jpg);"></div>
+                                <h4 class="home-product-item__name">Tỏi đen</h4>
+                            </a>
+                            <a href="#" class="home-product-item home-product-item-trangchitiet1">
+                                <div class="home-product-item__img" style="background-image: url(https://lh3.googleusercontent.com/proxy/TReIqluDVqNYrJht1jQf1IhKX8InETUIXWoHzbYdpd9BAoSOX3QpzGz6gSQfr1F488YH2-1-mSey8GZPs8n3kZiMDXP6Bkuz2OdMweQosQDFJ_P7cq2_GH1pmdrkuXli);"></div>
+                                <h4 class="home-product-item__name">Nấm kim châm</h4>
+                            </a>
+                            <a href="#" class="home-product-item home-product-item-trangchitiet1">
+                                <div class="home-product-item__img" style="background-image: url(https://namxanh.vn/wp-content/uploads/2020/03/nam-huong-nam-dong-co-2.jpg);"></div>
+                                <h4 class="home-product-item__name">Nấm hương tươi-Nấm Đông Cô Tươi</h4>
+                            </a>
+                            <a href="#" class="home-product-item home-product-item-trangchitiet1">
+                                <div class="home-product-item__img" style="background-image: url(https://hattieumyloc.com/upload/images/black2.jpg);"></div>
+                                <h4 class="home-product-item__name">Hạt tiêu đen</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="grid">
+            <div class="grid__row">
+                <div class="grid__column-2-4">
+                    <h3 class="footer__heading">Hạt giống bán chạy </h3>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Mướp hương </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Bí đao </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Rau thìa là </a>
+                            </li>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid__column-2-4">
+                    <h3 class="footer__heading">Danh mục sản phẩm</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Rau củ sạch Đà Lạt </a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Đặc sản vùng miền </a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Đồ ướt </a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Rau sạch  </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid__column-2-4">
+                    <h3 class="footer__heading">Danh mục tin tức </h3>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">An toàn thực phẩm</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Đặc sản Tây Bắc </a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Món ăn </a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Làm đẹp </a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Sức khỏe </a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Chính sách giao hàng </a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Chính sách đổi trả  </a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Chính sách bảo mật </a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Chính sách chung </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid__column-2-4">
+                    <h3 class="footer__heading">Liên kết mạng xã hội </h3>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">
+                                <i class="footer-item__icon fab fa-facebook-square"></i> Facebook: Nguyễn Công Minh
+                            </a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">
+                                <i class="footer-item__icon fab fa-facebook-square"></i> Facebook: Phùng Văn Phương
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid__column-2-4">
+                    <h3 class="footer__heading">Sản phẩm ưu chuộng</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Măng tây xanh </a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Táo mèo khô </a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Hà thủ ô đỏ </a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Mật ong bạc hà </a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Dâu tây Đà Lạt </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="grip">
+                <p class="footer__text">2021 - NongLamFram Made in Vietnam </p>
+            </div>
+        </div>
+    </footer>
+</div>
